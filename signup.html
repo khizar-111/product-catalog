@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register your account</title>
+    <style>
+        /* General container styling */
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form layout and styling */
+.user_form {
+    margin-bottom: 15px;
+}
+
+.user_form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.user_form input[type="text"],
+.user_form input[type="email"],
+.user_form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button.Sign_up {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button.Sign_up:hover {
+    background-color: #0056b3;
+}
+
+/* Payment link */
+.register-container p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+        
+    </style>
+</head>
+<div
+        class="register-container" >
+         <h2>Register your account</h2>
+         <form action="/register">
+            <div
+                class="user_form">
+                <label for="First_name"><first_name><b>First_name</b></label>
+                    <input type="text" id="first_name" name="first_name" required>
+                    <div>
+                    <label for="Last_name"><last_name><b>Last_name</b></label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+                    <div>
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="user_form">
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="confirm_password"><b>confirm_Password</b></label>
+                    <input type="password" id="confirm_password" name="confirm_Password" required>
+                </div>
+                <button type="submit" class="Sign_up">sign up</button>
+            </div>
+         </form>  
+         <p> payment-form <a href="index.html">Payment</a></p>
+    </div>
+</body>
+    </html>

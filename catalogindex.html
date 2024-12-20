@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="catalog.js"></script>
+
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .product {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .product .price {
+            color: #d9534f;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .product button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .product button:hover {
+            background-color: #218838;
+        }
+
+        .cart {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .cart h3 {
+            font-size: 1.5em;
+        }
+
+        .cart .total {
+            text-align: right;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Product Catalog</h1>
+    </header>
+
+    <div class="container">
+        <div class="product" data-price="10" data-name="Devil's Sea">
+            <img src="pimages/Devil's Sea.jpg" width="160px" alt="Product 1">
+            <h3>Devil's Sea</h3>
+            <p>Bold and mysterious fragrance with smoky, aquatic notes.</p>
+            <div class="price">$10</div>
+            <input type="number" value="0" min="1" class="quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-price="20" data-name="Boss Perfume">
+            <img src="pimages/boss.jpg" width="160px" alt="Product 2">
+            <h3>Boss Perfume</h3>
+            <p>Fresh and luxurious with notes of citrus, jasmine, and sandalwood.</p>
+            <div class="price">$20</div>
+            <input type="number" value="0" min="1" class="quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-price="30" data-name="Janan Gold">
+            <img src="pimages/janan gold.jpg" width="160px" alt="Product 3">
+            <h3>Janan Gold Perfume</h3>
+            <p>Exotic fragrance with oud, rose, and amber notes.</p>
+            <div class="price">$30</div>
+            <input type="number" value="0" min="1" class="quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-price="100" data-name="Bleu de Chanel">
+            <img src="pimages/bleudechanel.jpg" width="160px" alt="Product 4">
+            <h3>Bleu de Chanel</h3>
+            <p>Refreshing citrus and wood notes with a sophisticated touch.</p>
+            <div class="price">$100</div>
+            <input type="number" value="0" min="1" class="quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="cart">
+        <h3>Your Cart</h3>
+        <div id="cart_items"></div>
+        <div class="total">Total: $<span id="total-price">0.00</span></div>
+    </div>
+    <button type="submit" class="pay-now" >
+        <a href="loginindex.html">check_out</a>
+        
+    </button>   
+    </body>
+</html>
